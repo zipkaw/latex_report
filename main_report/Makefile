@@ -10,7 +10,6 @@ all: $(DIPLOMA_REPORT_PDF).pdf
 fast: *.tex ../*.tex ../*.bib
 	latexmk -pdf -xelatex $(DIPLOMA_REPORT_PDF)
 
-
 $(DIPLOMA_REPORT_PDF).pdf: *.tex ../*.tex ../*.bib
 	$(PDFLATEX) $(DIPLOMA_REPORT_PDF)
 	$(MAKEINDEX) $(DIPLOMA_REPORT_PDF).nlo -s nomencl.ist -o $(DIPLOMA_REPORT_PDF).nls
@@ -27,4 +26,4 @@ cleanall: clean
 
 .PHONY: clean cleanall
 clean:
-	$(RM) *.aux *.log *.out *.toc *.gz *.gz\(busy\) *.blg *.bbl *.nlo *.nls *.fls *.xdv *.fdb_latexmk *.ilg
+	$(RM) *.aux *.log *.out *.toc *.gz *.gz\(busy\) *.blg *.bbl *.nlo *.nls *.fls *.xdv *.fdb_latexmk *.ilg *.pdf
