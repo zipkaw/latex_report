@@ -25,5 +25,8 @@ cleanall: clean
 	$(RM)  *.pdf
 
 .PHONY: clean cleanall
-clean:
+
+cleanpdf:
 	$(RM) *.aux *.log *.out *.toc *.gz *.gz\(busy\) *.blg *.bbl *.nlo *.nls *.fls *.xdv *.fdb_latexmk *.ilg *.pdf
+clean:
+	$(RM) *.aux *.log *.out *.toc *.gz *.gz\(busy\) *.blg *.bbl *.nlo *.nls *.fls *.xdv *.fdb_latexmk *.ilg
