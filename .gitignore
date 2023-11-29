@@ -1,5 +1,6 @@
 # Created by https://www.gitignore.io/api/vim,latex,emacs
-
+.vscode
+*.bkp
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
